@@ -13,6 +13,7 @@ for shop, prod_list in shopping.items():
 print('W sumie kupuję', sum(q), 'produktów.\n')
 
 # SecondWay
+
 shopping = {
     'piekarnia': ['chleb', 'pączek', 'bułki', 'ciastko'],
     'warzywniak': ['marchew', 'seler', 'rukola'],
@@ -26,8 +27,6 @@ for shopname in shopping.keys():
 
 for shop, prod_list in shopping.items():
     new_prod_list = [prod.capitalize() for prod in prod_list]
-#   przećwiczyłem też alternatywny sposób, ale z dłuższym wierszem ... efekt ten sam
-#   new_prod_list = [prod.capitalize() for i, prod in enumerate(prod_list)]
     shopping[shop] = new_prod_list
 
 q = []
